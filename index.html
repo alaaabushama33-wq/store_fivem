@@ -1,158 +1,155 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="ar">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>BOT PRO MAX</title>
-<style>
-    body {
-        margin: 0;
-        font-family: 'Segoe UI', sans-serif;
-        background: #0f0f0f;
-        color: white;
-        text-align: center;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOT PRO MAX</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: #0f0f0f;
+            color: white;
+            text-align: center;
+            scroll-behavior: smooth;
+        }
 
-    header {
-        padding: 60px 20px;
-        background: linear-gradient(135deg, #1e1e2e, #111119);
-    }
+        header {
+            padding: 60px 20px;
+            background: linear-gradient(135deg, #1e1e2e, #111119);
+        }
 
-    h1 {
-        font-size: 55px;
-        font-weight: 900;
-        color: #61dafb;
-        text-shadow: 0 0 20px #61dafb;
-    }
+        h1 {
+            font-size: 55px;
+            font-weight: 900;
+            color: #61dafb;
+            text-shadow: 0 0 20px #61dafb;
+        }
 
-    .verified {
-        display: inline-block;
-        background: #5865F2;
-        color: white;
-        padding: 6px 15px;
-        margin-top: 10px;
-        border-radius: 20px;
-        font-weight: bold;
-        font-size: 14px;
-    }
+        .verified {
+            display: inline-block;
+            background: #5865F2;
+            color: white;
+            padding: 6px 15px;
+            margin-top: 10px;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 14px;
+        }
 
-    .dev-note {
-        margin-top: 15px;
-        background: #202020;
-        display: inline-block;
-        padding: 10px 20px;
-        border-radius: 10px;
-        color: #ffdd57;
-        border: 1px solid #333;
-        font-size: 15px;
-        box-shadow: 0 0 10px black;
-    }
+        .dev-note {
+            margin-top: 15px;
+            background: #202020;
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 10px;
+            color: #ffdd57;
+            border: 1px solid #333;
+            font-size: 15px;
+            box-shadow: 0 0 10px black;
+        }
 
-    .buttons { margin-top: 40px; }
+        .buttons { margin-top: 40px; }
 
-    .btn {
-        display: inline-block;
-        margin: 10px;
-        padding: 15px 30px;
-        font-size: 20px;
-        color: white;
-        text-decoration: none;
-        border-radius: 10px;
-        transition: 0.3s;
-        font-weight: 700;
-    }
+        .btn {
+            display: inline-block;
+            margin: 10px;
+            padding: 15px 30px;
+            font-size: 20px;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            transition: 0.3s;
+            font-weight: 700;
+        }
 
-    .invite { background: #5865F2; }
-    .invite:hover { background: #4752C4; }
+        .invite { background: #5865F2; }
+        .invite:hover { background: #4752C4; }
 
-    .support { background: #00aaff; }
-    .support:hover { background: #0088cc; }
+        .support { background: #00aaff; }
+        .support:hover { background: #0088cc; }
 
-    .donate { background: #ff9900; }
-    .donate:hover { background: #cc7a00; }
+        .donate { background: #ff9900; }
+        .donate:hover { background: #cc7a00; }
 
-    /* مميزات البوت */
-    .features { padding: 60px 20px; }
-    .feature-box {
-        background: #161616;
-        margin: 20px auto;
-        padding: 20px;
-        max-width: 700px;
-        border-radius: 10px;
-        border: 1px solid #222;
-        box-shadow: 0 0 10px #000;
-    }
+        .features {
+            padding: 60px 20px;
+        }
 
-    /* قسم أدوات إضافية */
-    .store {
-        background: linear-gradient(135deg, #13131a, #0a0a0d);
-        padding: 60px 20px;
-        border-top: 2px solid #61dafb30;
-        box-shadow: 0 0 35px #000 inset;
-    }
+        .feature-box {
+            background: #161616;
+            margin: 20px auto;
+            padding: 20px;
+            max-width: 700px;
+            border-radius: 10px;
+            border: 1px solid #222;
+            box-shadow: 0 0 10px #000;
+        }
 
-    .store h2 {
-        font-size: 38px;
-        color: #61dafb;
-        text-shadow: 0 0 12px #61dafb;
-        margin-bottom: 25px;
-    }
+        /* قسم المتجر */
+        .store {
+            padding: 60px 20px;
+            background: #0a0a0a;
+        }
 
-    .offer-box {
-        background: #14141b;
-        margin: 30px auto;
-        padding: 25px;
-        max-width: 750px;
-        border-radius: 16px;
-        border: 2px solid #2a2a38;
-        box-shadow: 0 0 18px #000;
-    }
+        .store h2 {
+            color: #ff0077;
+            font-size: 36px;
+            margin-bottom: 30px;
+        }
 
-    iframe {
-        max-width: 100%;
-        border-radius: 10px;
-    }
+        .product-box {
+            background: #151515;
+            border: 1px solid #222;
+            padding: 25px;
+            margin: 25px auto;
+            max-width: 720px;
+            border-radius: 12px;
+            box-shadow: 0 0 25px #000;
+        }
 
-    .btn.free {
-        background: #00d47b;
-        color: #fff;
-    }
-    .btn.free:hover { background: #00b569; }
+        .badge {
+            display:inline-block;
+            background:#ff0077;
+            padding:5px 12px;
+            border-radius:8px;
+            font-size:14px;
+            font-weight:bold;
+            margin-bottom:10px;
+        }
 
-    .btn.premium {
-        background: #d9008c;
-        color: #fff;
-    }
-    .btn.premium:hover { background: #b30075; }
-
-    .badge {
-        background: #ffde00;
-        color: #000;
-        font-weight: bold;
-        padding: 6px 14px;
-        border-radius: 20px;
-        font-size: 13px;
-        display: inline-block;
-        margin-bottom: 10px;
-    }
-
-    .badge.hot { background: #ff0066; color: white; }
-
-    footer {
-        margin-top: 40px;
-        padding: 20px;
-        color: #777;
-        font-size: 14px;
-    }
-</style>
+        footer {
+            margin-top: 40px;
+            padding: 20px;
+            color: #777;
+            font-size: 14px;
+        }
+    </style>
 </head>
 
 <body>
 
 <header>
     <h1>BOT PRO MAX</h1>
+
     <div class="verified">✔ تم توثيق البوت رسميًا</div>
+
     <div class="dev-note">⚙️ البوت تحت التطوير لكنه يعمل بكامل وظائفه 👌</div>
+
+    <!-- إعلان حصري -->
+    <div style="
+        background:linear-gradient(45deg,#ff0077,#6100a8);
+        padding:12px 25px;
+        display:inline-block;
+        border-radius:10px;
+        font-size:18px;
+        font-weight:bold;
+        margin-top:25px;
+        box-shadow:0 0 20px #ff0077;
+        cursor:pointer;"
+        onclick="document.getElementById('tools').scrollIntoView({behavior:'smooth'});">
+        🚀 عروض حصرية جداً — أدوات مطور BOT PRO متاحة الآن 💎
+    </div>
 
     <div class="buttons">
         <a class="btn invite" href="https://discord.com/oauth2/authorize?client_id=1396302389279195248&permissions=8&scope=bot%20applications.commands">
@@ -160,7 +157,7 @@
         </a>
 
         <a class="btn support" href="https://discord.gg/Z3RFE8Zd56" target="_blank">
-            💬 سيرفر الدعم الفني (إدارة بوت برو)
+            💬 سيرفر الدعم الفني
         </a>
 
         <a class="btn donate" target="_blank" href="https://paypal.me/Alaaabushamaa">
@@ -168,7 +165,6 @@
         </a>
     </div>
 </header>
-
 
 <section class="features">
     <h2 style="font-size: 35px; color:#61dafb;">مميزات BOT PRO MAX</h2>
@@ -178,35 +174,39 @@
     <div class="feature-box">🤖 أوامر سريعة وذكية</div>
     <div class="feature-box">⚙️ نظام تذاكر متطور</div>
     <div class="feature-box">🎉 فعاليات وتفاعل ممتع</div>
-</section>
 
-
-<!-- 🛠 أدوات إضافية من تطويرنا -->
-<section class="store">
-    <h2>🛠 أدوات إضافية من تطويرنا</h2>
-
-    <!-- نسخة مجانية -->
-    <div class="offer-box">
-        <span class="badge">🎁 مجانًا للجميع</span>
-        <iframe src="https://itch.io/embed/4059310" width="552" height="167" frameborder="0"></iframe>
-        <br>
-        <a class="btn free" target="_blank" href="https://abu-shamaa.itch.io/ala-clock-pro">
-            ⬇ تنزيل النسخة المجانية
+    <!-- زر انتقال -->
+    <div style="margin-top:40px;">
+        <a href="javascript:void(0)"
+           onclick="document.getElementById('tools').scrollIntoView({behavior:'smooth'});"
+           class="btn"
+           style="background:#ff0077; font-size:22px; padding:16px 45px;">
+            ⭐ الذهاب إلى أدوات BOT PRO الحصرية
         </a>
     </div>
+</section>
 
-    <!-- نسخة مدفوعة -->
-    <div class="offer-box">
-        <span class="badge hot">🔥 نسخة Beast المتطورة</span>
-        <iframe src="https://itch.io/embed/4096179" width="552" height="167" frameborder="0"></iframe>
-        <br>
-        <a class="btn premium" target="_blank" href="https://abu-shamaa.itch.io/ala-clock-pro-cyber-beast-edition">
-            💎 شراء النسخة الاحترافية
-        </a>
+<!--  🛒 قسم الأدوات -->
+<section class="store" id="tools">
+    <h2>الأدوات الحصرية للمطور 👑</h2>
+
+    <div class="product-box">
+        <div class="badge">💎 نسخة مدفوعة — Cyber Beast Edition</div>
+        <iframe src="https://itch.io/embed/4096179" width="552" height="167" frameborder="0">
+            <a href="https://abu-shamaa.itch.io/ala-clock-pro-cyber-beast-edition">Ala Clock Pro – Cyber Beast Edition by abu shama`a</a>
+        </iframe>
+        <p style="color:#ff66cc;font-size:18px;">🔥 أقوى نسخة — مزايا أكثر — تصميم نيون احترافي</p>
+    </div>
+
+    <div class="product-box">
+        <div class="badge" style="background:#0099ff;">🎁 نسخة مجانية — Classic Edition</div>
+        <iframe src="https://itch.io/embed/4059310" width="552" height="167" frameborder="0">
+            <a href="https://abu-shamaa.itch.io/ala-clock-pro">Ala Clock Pro – Classic Edition by abu shama`a</a>
+        </iframe>
+        <p style="color:#61dafb;font-size:18px;">✨ مناسبة للجميع — بدون دفع — نسخة أساسية وبسيطة</p>
     </div>
 
 </section>
-
 
 <footer>
     BOT PRO MAX © جميع الحقوق محفوظة 2025
