@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>متجر سيرفرات دسكورد وبرامج</title>
+
   <style>
     body {
       margin: 0;
@@ -11,17 +12,21 @@
       background: linear-gradient(135deg, #0f172a, #020617);
       color: #fff;
     }
+
     header {
       padding: 40px 20px;
       text-align: center;
     }
+
     header h1 {
       font-size: 2.5rem;
       margin-bottom: 10px;
     }
+
     header p {
       color: #cbd5f5;
     }
+
     .container {
       max-width: 1100px;
       margin: auto;
@@ -30,6 +35,7 @@
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 20px;
     }
+
     .card {
       background: #020617;
       border: 1px solid #1e293b;
@@ -37,25 +43,31 @@
       padding: 25px;
       box-shadow: 0 10px 30px rgba(0,0,0,0.4);
       transition: transform 0.3s ease, box-shadow 0.3s ease;
+      position: relative;
     }
+
     .card:hover {
       transform: translateY(-6px);
       box-shadow: 0 20px 50px rgba(0,0,0,0.6);
     }
+
     .card h2 {
       margin-top: 0;
       color: #38bdf8;
     }
+
     .price {
       font-size: 1.5rem;
       margin: 15px 0;
       color: #22c55e;
     }
+
     ul {
       padding-right: 18px;
       line-height: 1.8;
       color: #e5e7eb;
     }
+
     .buy-btn {
       display: block;
       margin-top: 20px;
@@ -68,9 +80,23 @@
       font-weight: bold;
       transition: opacity 0.3s ease;
     }
+
     .buy-btn:hover {
       opacity: 0.85;
     }
+
+    .badge {
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      background: linear-gradient(135deg, #22c55e, #4ade80);
+      color: #022c22;
+      font-size: 0.8rem;
+      padding: 6px 12px;
+      border-radius: 999px;
+      font-weight: bold;
+    }
+
     footer {
       text-align: center;
       padding: 25px;
@@ -78,83 +104,140 @@
       border-top: 1px solid #1e293b;
       margin-top: 40px;
     }
+
     .store-link {
-      display: inline-block;
-      margin-top: 10px;
       color: #38bdf8;
       text-decoration: none;
       font-weight: bold;
     }
-    .badge {
-      display: inline-block;
-      background: linear-gradient(135deg, #22c55e, #4ade80);
-      color: #022c22;
-      font-size: 0.8rem;
-      padding: 5px 10px;
-      border-radius: 999px;
-      margin-bottom: 10px;
-      font-weight: bold;
+
+    .card img {
+      width: 100%;
+      border-radius: 12px;
+      margin-bottom: 15px;
     }
   </style>
 </head>
+
 <body>
 
 <header>
   <h1>🛒 متجر سيرفرات دسكورد وبرامج</h1>
-  <p>شراء سيرفرات وبوتات وبرامج احترافية • دفع مباشر عبر PayPal</p>
-  <p>💬 سيرفر الدعم: <a href="https://discord.gg/qjDE9Zgyru" target="_blank" class="store-link">انضم للدعم الفني</a></p>
-  <p>🛍️ رابط المتجر: <a href="https://itch.io/profile/abu-shamaa" target="_blank" class="store-link">زيارة المتجر على itch.io</a></p>
+  <p>سيرفرات • بوتات • برامج احترافية | دفع مباشر عبر PayPal</p>
+  <p>💬 سيرفر الدعم:
+    <a class="store-link" href="https://discord.gg/qjDE9Zgyru" target="_blank">انضم للدعم الفني</a>
+  </p>
+  <p>🛍️ المتجر:
+    <a class="store-link" href="https://itch.io/profile/abu-shamaa" target="_blank">زيارة متجر itch.io</a>
+  </p>
 </header>
 
+<!-- قسم البوتات والسيرفرات -->
 <section class="container">
 
   <!-- Bot Pro Max -->
   <div class="card">
     <span class="badge">⭐ البوت الأساسي</span>
     <h2>🤖 Bot Pro Max</h2>
-    <p class="price">🚀 مجاني / نظام احترافي</p>
+    <p class="price">🚀 مجاني / احترافي</p>
     <ul>
       <li>بوت إدارة وحماية شامل</li>
-      <li>أنظمة متقدمة للأوامر والإشراف</li>
+      <li>أوامر متقدمة وإشراف كامل</li>
       <li>مناسب لسيرفرات RP والمتاجر</li>
-      <li>ثبات عالي وأداء سريع</li>
-      <li>تحديثات وتطوير مستمر</li>
+      <li>ثبات عالي وتحديثات مستمرة</li>
     </ul>
-    <a class="buy-btn" href="https://discord.com/oauth2/authorize?client_id=1396302389279195248&permissions=8&integration_type=0&scope=bot" target="_blank">
+    <a class="buy-btn"
+       href="https://discord.com/oauth2/authorize?client_id=1396302389279195248&permissions=8&integration_type=0&scope=bot"
+       target="_blank">
       إضافة Bot Pro Max
+    </a>
+  </div>
+
+  <!-- Bot Blacklist -->
+  <div class="card">
+    <h2>🛡️ Bot Blacklist</h2>
+    <p class="price">✅ مجاني</p>
+    <ul>
+      <li>حماية من النصابين والمخالفين</li>
+      <li>نظام موحد بين جميع السيرفرات</li>
+      <li>إدارة مركزية بدون إعدادات</li>
+      <li>مناسب للمتاجر و RP</li>
+    </ul>
+    <a class="buy-btn"
+       href="https://discord.com/oauth2/authorize?client_id=1438908896113856607&permissions=8&integration_type=0&scope=bot"
+       target="_blank">
+      إضافة Bot Blacklist
     </a>
   </div>
 
   <!-- MTRP -->
   <div class="card">
     <h2>1️⃣ MTRP</h2>
-    <p class="price">🔥 20$ <span style="text-decoration:line-through;color:#94a3b8;font-size:1rem;">25$</span></p>
+    <p class="price">🔥 20$
+      <span style="text-decoration:line-through;color:#94a3b8;font-size:1rem;">25$</span>
+    </p>
     <ul>
       <li>سيرفر فايف إم كامل</li>
-      <li>جميع الرولات جاهزة</li>
-      <li>جميع الرومات منظمة</li>
+      <li>رومات ورولات جاهزة</li>
+      <li>تنظيم احترافي</li>
       <li>مناسب لسيرفرات RP</li>
     </ul>
-    <a class="buy-btn" href="https://paypal.me/Alaaabushamaa/20" target="_blank">شراء عبر PayPal</a>
+    <a class="buy-btn" href="https://paypal.me/Alaaabushamaa/20" target="_blank">
+      شراء عبر PayPal
+    </a>
   </div>
 
   <!-- Respect -->
   <div class="card">
     <h2>2️⃣ Respect | ريسبكت</h2>
-    <p class="price">🔥 20$ <span style="text-decoration:line-through;color:#94a3b8;font-size:1rem;">25$</span></p>
+    <p class="price">🔥 20$
+      <span style="text-decoration:line-through;color:#94a3b8;font-size:1rem;">25$</span>
+    </p>
     <ul>
       <li>نفس نظام MTRP</li>
-      <li>تنظيم احترافي</li>
-      <li>رومات + رولات كاملة</li>
+      <li>رولات + رومات كاملة</li>
       <li>جاهز للاستخدام</li>
+      <li>تنظيم ممتاز</li>
     </ul>
-    <a class="buy-btn" href="https://paypal.me/Alaaabushamaa/20" target="_blank">شراء عبر PayPal</a>
+    <a class="buy-btn" href="https://paypal.me/Alaaabushamaa/20" target="_blank">
+      شراء عبر PayPal
+    </a>
+  </div>
+
+</section>
+
+<!-- قسم البرامج -->
+<section class="container">
+
+  <div class="card">
+    <h2>Ala Clock Pro – Cyber Beast</h2>
+    <p class="price">$13</p>
+    <img src="1b5497d4-f605-4bd1-9225-b21f85902dce.png" alt="Ala Clock Pro">
+    <ul>
+      <li>System Monitor & Cleaner</li>
+      <li>CPU / RAM / Network Live</li>
+      <li>Clean Cache & Close Apps</li>
+      <li>Dark Mode & Themes</li>
+    </ul>
+    <a class="buy-btn" href="#" target="_blank">شراء البرنامج</a>
+  </div>
+
+  <div class="card">
+    <h2>Ala Clock Pro – Classic</h2>
+    <p class="price">$10</p>
+    <ul>
+      <li>System Monitor & Cleaner</li>
+      <li>CPU & RAM Monitor</li>
+      <li>Clean Cache</li>
+      <li>Dark Mode</li>
+    </ul>
+    <a class="buy-btn" href="#" target="_blank">شراء البرنامج</a>
   </div>
 
 </section>
 
 <footer>
-  © 2026 • متجر سيرفرات دسكورد وبرامج – تسليم سريع بعد الدفع
+  © 2026 • متجر سيرفرات دسكورد وبرامج – تسليم فوري بعد الدفع
 </footer>
 
 </body>
